@@ -58,10 +58,12 @@ var __assign = (this && this.__assign) || function () {
                 }
                 switch (type) {
                     case 'set': {
+                        var meta = root.observer.meta;
                         root.observer.meta = {
                             source: source
                         };
                         root.set(path, data);
+                        root.observer.meta = meta;
                         break;
                     }
                     case 'unset': {

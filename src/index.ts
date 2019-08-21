@@ -50,10 +50,12 @@ function plugin(options: SyncOptions) {
             }
             switch (type) {
                 case 'set': {
+                    const {meta} = root.observer
                     root.observer.meta = {
                         source
                     }
                     root.set(path, data)
+                    root.observer.meta = meta
                     break
                 }
                 case 'unset': {

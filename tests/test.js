@@ -31,3 +31,6 @@ d1.set('xx', 123)
 
 assert.deepEqual(d2.unwrap(), {xx: 123})
 assert.deepEqual(checkValues.length, 0)
+
+assert.deepEqual(d1.observer.meta, {})
+assert.deepEqual(d2.observer.meta, {})
