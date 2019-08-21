@@ -1,0 +1,24 @@
+{
+  "name": "edata-sync",
+  "version": "1.0.0",
+  "description": "Sync multiple edata instances",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "tsc && node tests/test.js"
+  },
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "keywords": [
+    "edata",
+    "plugin"
+  ],
+  "author": "James Yang <jamesyang999@gmail.com>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "edata": "^0.8.13",
+    "typescript": "^3.5.3"
+  }
+}
